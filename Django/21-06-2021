@@ -1,0 +1,17 @@
+21-06-2021
+==========
+
+ ## Model :
+    - model is a class
+    - this class will represent db table or collection in data base 
+    - in that class each and every field will acts like as a db columns
+    - To convert a model class to db table , we have to run a command in cmd prompt
+            ``` python manage.py makemigrations ```
+        -> after running this makemigrations command , it will create a interface file
+        -> By using this interface file we have to create a db table
+        -> for that we have to run a command
+            ''' python manage.py migrate
+        -> after running this command it will generate db table with name of 'appname_modelclass'
+
+  ### create table register(name varchar(50),email varchar(50))
+    - To access user models inside admin portal,we have to register user model class

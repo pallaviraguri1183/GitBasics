@@ -1,0 +1,43 @@
+15-06-2021
+==========
+
+  ### Images:
+  - First we need to create a folder inside static i.e,images
+  - you have to image inside that images folder
+
+  ## Task1 :
+
+      You have to create a new registration form with firstname,lastname,emailid,phoneno,gender(radio),address(texture),languaugesknown(checkbox),
+      If possible include select control also etc.
+      Then you have to print that entire data in another html file.
+
+  ## Task2 :
+
+      Perform login authentication
+      - You have to create login form
+      - If uname and pwd is valid u judt print user is valid
+      - Otherwise u just user is not valid
+
+
+
+      if req.method=="POST":
+		fname = req.POST['fname']
+		lname = req.POST['lname']
+		pwd = req.POST['pwd']
+		gender = req.POST['gender']
+		email = req.POST['email']
+		phnno = req.POST['phnno']
+		address = req.POST['address']
+		lang = req.POST['lang']
+
+
+		if req.method=="POST":
+		fname = req.POST['fname']
+		lname = req.POST['lname']
+		pwd = req.POST['pwd']
+		gender = req.POST['gender']
+		email = req.POST['email']
+		phnno = req.POST['phnno']
+		address = req.POST['address']
+		lang = req.POST['lang']
+		data = {'name1':fname,'name2':lname,'pwd':pwd,'gender':gender,'email':email,'phnno':phnno,'address':address,'lang':lang}

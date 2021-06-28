@@ -1,0 +1,76 @@
+23-06-2021
+==========
+
+ORM(object relational mapping);
+  - In django we are usig ORM to perform CRUD operation
+  - To practice ORM queries we have to open django shell by using 
+       ``` python manage.py shell ```
+  - we have to make a connection between shell prompt and models.py
+       ``` from FirstApp.models import Register ```
+  - now we have to insert a record
+  - SQL query (for insertion record) is:
+       ``` insert into register values("pandu","pandu11183@gmail.com") ```
+
+  - ORM Query :
+        reg = Register(name = "ashu", email = "ashu@gmail.com")
+        reg.save()
+                  (or)
+        reg1 = Register.objects.create()
+  - retrive records:
+        - retrive all records:
+        - SQL Query:
+             ``` select * from register ```
+        - ORM query:
+             ``` data = Register.objects.all() ```
+        - retrive a special column i.e, email
+        - SQL Query:
+             ``` select email from register ```
+        - ORM Query:
+             ``` data = Register.objects.all() ```
+             - Iterate loop like this
+                ``` for row in data:
+                         print(row.email)
+                ```
+        - retrive a specific row:
+        - SQL Query:
+             ``` select * from register where name = pandu ```
+        - ORM Query:
+           - to retrie a specific row, here we have two defferent methods 
+               1. by using filter()
+                   ``` info = Register.objects.filter(name="pandu") ```
+               2. by using get()
+                - get() dont accept multiple records
+                   ``` info = Register.objects.get(name="pandu") ```
+            - i want to retrive a record whose name is pandu and whose mail id is pandu@gmail.com
+                - SQL Query is:
+                   ``` select * from register where name = 'pandu' and email='panndu@gmail.com' ```
+                - ORM Query:
+                   ``` info = Register.objects.filter(name="pandu",email="pandu@gmail.com") ```
+            - to retrive first record
+                ```  info = Register.objects.all().first() ```   
+            - to retrive last record
+                ```  info = Register.objects.all().last() ```
+            - to retrivr fiest two records
+                ```  info = Register.objects.all().[:2] ```
+
+        # Update a record:
+          - To update a specific record:
+            - SQL Query:
+                ``` update Register set email = 'vyshu123@gmail.com' where name = vyshu ```
+            - ORM :
+                ``` info = Register.objects.get(name="vyshu")
+                    info.email = vyshu123@gmail.com
+                    info.save()
+                ```
+        # Delete a record :
+            - SQL Query :
+                ``` delete from register where name ="bhagi" ```
+            - ORM :
+                ``` info = Register.objects.get(name='bhagi')
+                    info.delete() 
+                ```
+        - To remove all records:
+            - SQL Query:
+                ``` delete from register ```
+            - ORM Query :
+                ``` Register.objects.all.delete() ```

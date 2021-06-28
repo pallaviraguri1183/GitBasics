@@ -1,0 +1,34 @@
+18-06-2021
+==========
+
+
+SQL :
+====
+  - Create table table_name(
+  variable variable_type(arguments),
+  );
+
+
+ Existing TAble:
+ auth_user
+
+ appname_classname
+
+ MakeMigrations => ife we want to change variablename,type,value in table then we use makemigrations => Interfacing file created(1st time)
+                    => 0001_initial.py
+ MIgrate
+ Admin Creation
+
+url => views => templates => views => templates
+
+url => views => templates => views => dbbrowser => templates
+
+Admin[Superuser]:
+=================
+
+manage.py createsuperuser
+username => PC Name "Admin => Name"
+Email => x
+Password => xxxxxx (not visible)
+Confirm password => xxxxxx (not visible)
+Password (y/n)? y

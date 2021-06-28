@@ -1,0 +1,37 @@
+## Django:
+      - it is external module in python,so that we have to install
+      - it is web development framewokr coded in python
+      - while developing this django they followed a design pattern MVT.
+      
+### MVC:
+       - M => MODEL
+            - it will store logics related database
+        
+       - V => VIEW
+            - it willl store info related
+            UI(user interface)
+          
+       - C => CONTROLLER
+            - it will logics main logic
+            
+## MVT :
+     M - Model
+       - it will stores logic related database
+     V - View
+       - it will works like controller
+     T - Template
+       - It will store related info
+       UI(User Interface)
+       
+## Required Software :
+      - Install django
+           - To install django , you have to run a cmd in command prompt
+                `` pip install django``
+                        (or)
+                `` pip install django == versionofDJ``
+
+     - install any tool(sublime,atom,pycharm,notepad++,visual studio)
+     
+## Project Creation
+     - we have to choose a project location
+     - then you have to open cmd from that project location

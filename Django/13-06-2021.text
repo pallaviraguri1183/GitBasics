@@ -1,0 +1,29 @@
+13-06-2021.text
+
+css styling :
+============
+    - Inline --> within a tag
+    - Internal --> seperators,tag,id -> #,class -> . ->
+    <style>
+    h2
+    {
+        propert:value;
+        property1:value1;
+    }
+    </style>
+    - External --> .css[external file => link]
+
+External :
+==========
+   create static folder
+     css -> styling
+     js -> validation
+     jquery -> action
+     images -> .extension 
+
+url -> views -> template -> views -> template
+
+static
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/filename.extension' %}">

@@ -1,0 +1,20 @@
+17-06-2021
+==========
+
+Bootstrap -> online
+  => Link -> internet
+
+
+Bootstrap -> offline
+  => Link -> static => 
+
+
+
+  class = "bg-success text-center text-align"
+
+
+  {% load static %}
+
+  margin => 0 - 5
+    margin => left right bottom top
+    

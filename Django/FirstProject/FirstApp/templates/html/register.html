@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+</head>
+<body>
+<form action="{% url 'register' %}" method="post" method="get">
+		{% csrf_token %}
+	<form >
+	<table>
+		<tr>
+			<td>First Name : </td>
+			<td><input type="text" placeholder="Enter Your First Name" name="fname"></td>
+		</tr>
+		<tr>
+			<td>Last Name : </td>
+			<td><input type="text" placeholder="Enter Your Last Name" name="lname"
+			</td>
+		</tr>
+		<tr>
+			<td>Password : </td>
+			<td><input type="Password" placeholder="Password" name="psd"></td>
+		</tr>
+		<tr>
+			<td> gender : </td>
+			<td><input type="radio" name="gender" value="Male">Male
+				<input type="radio" name="gender" value="Female">Female</td>
+		</tr>
+		<tr>
+			<td> Email : </td>
+			<td><input type="text" placeholder="Email id" name="email"></td>
+		</tr>
+		<tr>
+			<td> Phone No : </td>
+			<td>
+				<select>
+					<option>977</option>
+					<option>978</option>
+					<option>979</option>
+					<option>980</option>
+					<option>981</option>
+					<option>982</option>
+					<option>982</option>
+				</select>
+				<input type="phone" placeholder="97********" name="phnno">
+			</td>
+		</tr>
+		<tr>
+			<td> Address : </td>
+			<td><input type="text" placeholder="Enter Address" name="address"></td>
+		</tr>
+		<tr>
+			<td>Languages Known : </td>
+			<td>
+				<form>
+					Hindi <input type="checkbox" name="lang" value="Hindi">
+					English  <input type="checkbox" name="lang" value="English">
+					Telugu  <input type="checkbox" name="lang" value="Telugu">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>Submit : </td>
+			<td><input type="Submit" name="submit"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

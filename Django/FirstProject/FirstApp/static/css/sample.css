@@ -1,0 +1,15 @@
+div
+{
+	margin-left: 30%;
+    margin-right: 30%;
+    background-color: cadetblue;
+    text-align: center;
+}
+h3
+{
+	background-color: gray;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    border: groove;
+}
