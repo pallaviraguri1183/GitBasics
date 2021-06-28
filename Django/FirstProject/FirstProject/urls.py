@@ -36,7 +36,7 @@ urlpatterns = [
     path('btrg/',views.btregi,name="btr"),
     path('register1/',views.register1),
     path('register2/',views.register2,name="register2"),
-    path('display1/',views.display1),
+    path('display1/',views.display1,name="dt"),
     path('viw/<int:y>/',views.sview,name = "sv"),
     path('upu/<int:q>/',views.supt,name="sup"),
     path('dl/<int:p>/',views.sudl,name="sd"),
